@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Management App</title>
+    
+    <!-- Bootstrap CSS -->
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f7f9fc;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .card {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center text-primary mb-4">Story Management</h1>
+        
+        <!-- Form to Add or Edit a Story -->
+        <div class="card">
+            <div class="card-header bg-primary text-white">Add / Edit Story</div>
+            <div class="card-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="title" placeholder="Story Title">
+                </div>
+                <div class="form-group">
+                    <textarea id="content" class="form-control" rows="3" placeholder="Story Content"></textarea>
+                </div>
+                <button class="btn btn-success" onclick="createStory()">Add Story</button>
+                <button class="btn btn-warning" onclick="updateStory()">Update Story</button>
+            </div>
+        </div>
+
+        <!-- Input to Delete a Story by ID -->
+        <div class="card">
+            <div class="card-header bg-danger text-white">Delete Story</div>
+            <div class="card-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="storyId" placeholder="Story ID to Update/Delete">
+                </div>
+                <button class="btn btn-danger" onclick="deleteStory()">Delete Story</button>
+            </div>
+        </div>
+
+        <!-- Section to Display Stories -->
+        <h2 class="text-center text-info mb-3">All Stories</h2>
+        <div id="storyList" class="row"></div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Linking the JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

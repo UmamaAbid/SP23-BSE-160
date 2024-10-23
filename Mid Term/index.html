@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <h2>About Me</h2>
+        <p>Hello, I'm [Your Name], a passionate student pursuing [Your Degree] in [Your Field]. I love working on innovative projects related to [e.g., robotics, AI, automation], and I aim to make an impact through technology.</p>
+        <p>I'm always curious about learning new skills and applying them to real-world problems.</p>
+        <ul>
+            <li><strong>Email:</strong> your.email@example.com</li>
+            <li><strong>Location:</strong> [Your City, Country]</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Landing Section -->
+        <header class="landing-section">
+            <div class="container">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Showcasing my journey through exciting projects.</p>
+                <a href="#projects" class="btn">Explore Projects</a>
+            </div>
+        </header>
+
+        <!-- Semester 1 Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Semester 1 Projects</h2>
+
+                <div class="project-card">
+                    <h3>Project 1: Robotics System</h3>
+                    <p><strong>Summary:</strong> A beginner-level project to create a simple robotic system.</p>
+                    <button onclick="loadDescription('project1.txt')">Show Description</button>
+                    <div id="project1-description" class="description"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Semester 2 Projects Section -->
+        <section id="semester-2-projects" class="projects-section">
+            <div class="container">
+                <h2>Semester 2 Projects</h2>
+
+                <div class="project-card">
+                    <h3>Project 1: AI Chatbot</h3>
+                    <p><strong>Summary:</strong> A chatbot developed to answer basic queries using AI and machine learning.</p>
+                    <button onclick="loadDescription('project2.txt')">Show Description</button>
+                    <div id="project3-description" class="description"></div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
